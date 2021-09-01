@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./devchallenges.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.15.4-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.15.4-web/css/fontawesome.min.css"
+    />
+    <title>Checkout-Page</title>
+  </head>
+  <body>
+    <main>
+      <!-- heading -->
+      <header>
+        <h1>Checkout</h1>
+      </header>
+
+      <!-- product panel -->
+      <div id="product">
+        <div class="container">
+          <section class="item1">
+            <img src="./photo1.png" alt="" srcset="" />
+            <div class="details">
+              <p class="pro-name">Vintage Backbag</p>
+              <p class="pro-price">
+                <span>$54.99</span> <span><del>$94.99</del></span>
+              </p>
+              <div class="itm-qnty">
+                <button onclick="min_qnt1()">-</button>
+                <p id="first_qnt">1</p>
+                <button onclick="plus_qnt1()">+</button>
+              </div>
+            </div>
+          </section>
+          <section class="item2">
+            <img src="./photo2.png" alt="" srcset="" />
+            <div class="details">
+              <p class="pro-name">Levi Shoes</p>
+              <p class="pro-price">
+                <span>$74.99</span> <span><del>$124.99</del></span>
+              </p>
+              <div class="itm-qnty">
+                <button onclick="min_qnt2()">-</button>
+                <p id="second_qnt">1</p>
+                <button onclick="plus_qnt2()">+</button>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="total-price">
+          <hr />
+          <ul>
+            <li>Shipping</li>
+            <li>$19</li>
+          </ul>
+          <hr />
+          <ul>
+            <li>Total</li>
+            <li>$<span id="total">148.98</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- form creating -->
+      <form>
+        <h5>Contact information</h5>
+        <div class="contact">
+          <!-- email section -->
+          <section class="input-box mail">
+            <label for="email">E-mail</label>
+            <section id="fullbox-width">
+              <i class="fas fa-envelope"></i>
+              <input
+                required
+                type="email"
+                name="email"
+                id=""
+                placeholder="Enter your email..."
+              />
+            </section>
+          </section>
+          <!-- Phone number section -->
+          <section class="input-box phone">
+            <label for="phone">Phone</label>
+            <section id="fullbox-width">
+              <i class="fas fa-phone-alt"></i>
+              <input
+                required
+                type="tel"
+                name="phone"
+                id=""
+                placeholder="Enter your phone..."
+              />
+            </section>
+          </section>
+        </div>
+        <div class="shipping">
+          <h5>Shipping address</h5>
+          <section class="input-box fullname">
+            <label for="name">Full name</label>
+            <section id="fullbox-width">
+              <i class="fas fa-user-circle"></i>
+              <input
+                required
+                type="text"
+                name="name"
+                id=""
+                placeholder="Rodney Cotton"
+              />
+            </section>
+          </section>
+          <section class="input-box Address">
+            <label for="address">Address</label>
+            <section id="fullbox-width">
+              <i class="fas fa-home"></i>
+              <input
+                required
+                type="text"
+                name="address"
+                id=""
+                placeholder="Your address.."
+              />
+            </section>
+          </section>
+          <section class="ccp city">
+            <label for="city">City</label>
+            <section id="fullbox-width">
+              <i class="fas fa-city"></i>
+              <input
+                required
+                type="text"
+                name="City"
+                id=""
+                placeholder="Your city.."
+              />
+            </section>
+          </section>
+          <div class="con-post">
+            <section class="cpp country">
+              <label for="country">Country</label>
+              <section id="fullbox-width">
+                <i class="fas fa-globe-americas"></i>
+                <div id="container_coun">
+                  <select name="Country_list" id="con_list">
+                    <option value="Bangladesh" class="default">
+                      Selcet Your country
+                    </option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="India">India</option>
+                    <option value="England">England</option>
+                  </select>
+                </div>
+              </section>
+            </section>
+            <section class="cpp post-code">
+              <label for="postal-code">Postal Code</label>
+              <section id="fullbox-width">
+                <i class="fas fa-mail-bulk"></i>
+                <input
+                  required
+                  type="text"
+                  name="postcode"
+                  id="postCode"
+                  placeholder="Your postal code.."
+                />
+              </section>
+            </section>
+          </div>
+          <section class="check-box">
+            <input required type="checkbox" name="Save-data" id="" />
+            <span>Save this information for next time</span>
+          </section>
+          <section class="btn-submit">
+            <button type="submit" style="outline: none; border: none">
+              <a href="./demo.htm">Continue</a>
+            </button>
+                
+          </section>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p>
+        created by
+        <a href="https://github.com/turyabiswas233">tury&commat;biswas233</a> -
+        devChallenges.io
+      </p>
+    </footer>
+    <script src="./price_script.js"></script>
+
+  </body>
+</html>

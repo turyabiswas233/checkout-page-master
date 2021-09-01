@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-color: #121212;
+        color: aliceblue;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        text-align: center;
+        width: fit-content;
+        height: auto;
+        animation: text 1300ms infinite linear reverse;
+        font-size: 1.7rem;
+      }
+      @keyframes text {
+        from {
+          text-shadow: 0 0 10px #ff99ff;
+          transform: rotate(0deg);
+        }
+        50% {
+          text-shadow: 0 0 100px #fff9ff;
+        }
+        to {
+          text-shadow: 0 0 10px #ff99ff;
+          filter: drop-shadow(0 0 0.75rem #0fa) hue-rotate(90deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="visited_greeting">thanks Dear</h1>
+  </body>
+</html>
